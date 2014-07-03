@@ -12,22 +12,12 @@ using Parse;
 using OxxoTime.Service;
 using OxxoTime.Model;
 using OxxoTime.Droid;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace OxxoTime.Android
 {
-	// Get our button from the layout resource,
-	// and attach an event to it
-	//	Button button = FindViewById<Button> (Resource.Id.myButton);
 
-	//	button.Click += (sender, args)=>{
-	//	button.Text = string.Format ("{0} clicks!", count++);
-	//	string senders = "367399986029";
-	//	Intent intent = new Intent("com.google.android.c2dm.intent.REGISTER");
-	//	intent.SetPackage("com.google.android.gsf");
-	//	intent.PutExtra("app", PendingIntent.GetBroadcast(this.ApplicationContext, 0, new Intent(), 0));
-	//	intent.PutExtra("sender", senders);
-	//	this.ApplicationContext.StartService(intent);
-	//};
 	[Activity (Label = "@string/app_name", MainLauncher = true)]
 	public class MainActivity : Activity
 	{
@@ -38,6 +28,7 @@ namespace OxxoTime.Android
 		{
 			base.OnCreate (bundle);
 			ParseClient.Initialize (Options.ParseApplicationId, Options.ParseDotNetKey);
+
 			var user = new User() { Name = "Ricardo Blanco", Email ="ricardo.blanco@pricetravel.com" };
 			var obj = user.AsParseObject();
 			obj.SaveAsync ();

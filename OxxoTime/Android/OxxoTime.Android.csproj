@@ -71,6 +71,10 @@
     <Compile Include="Model\Order.cs" />
     <Compile Include="Model\OrderItem.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Service\Parse\UserManager.cs" />
+    <Compile Include="Service\IUserManager.cs" />
+    <Compile Include="Service\AndroidServices.cs" />
+    <Compile Include="MainActivityV2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -89,5 +93,6 @@
   <ItemGroup>
     <Folder Include="Service\" />
     <Folder Include="Model\" />
+    <Folder Include="Service\Parse\" />
   </ItemGroup>
 </Project>
