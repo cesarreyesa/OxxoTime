@@ -1,0 +1,38 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Android\MainActivity.cs">
+    <Files>
+      <File FileName="Android\packages.config" Line="1" Column="1" />
+      <File FileName="Android\MainActivity.cs" Line="85" Column="96" />
+      <File FileName="Android\MyGCMBroadcastReceiver.cs" Line="1" Column="1" />
+      <File FileName="Android\MyIntentService.cs" Line="1" Column="1" />
+      <File FileName="Android\Extensions.cs" Line="26" Column="27" />
+      <File FileName="Android\Model\Order.cs" Line="17" Column="13" />
+      <File FileName="Android\Resources\values\Strings.xml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="OxxoTime" expanded="True" />
+          <Node name="OxxoTime.Android" expanded="True" selected="True">
+            <Node name="References" expanded="True" />
+            <Node name="Model" expanded="True" />
+            <Node name="Properties" expanded="True" />
+            <Node name="Resources" expanded="True">
+              <Node name="layout" expanded="True" />
+              <Node name="values" expanded="True" />
+            </Node>
+            <Node name="Service" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\cesar.reyes\Documents\GitHub\OxxoTime\OxxoTime\Android\MyIntentService.cs" line="39" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.OxxoTime.Android AndroidDeviceId-Debug="TA0000159N" MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
+</Properties>

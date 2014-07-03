@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="@string/logged_in_hi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loggedin_main_textview_hi"
+        android:textSize="20sp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loggedin_space"
+        android:minHeight="100px" />
+    <Button
+        android:text="@string/logged_in_main_create_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logged_in_main_btn_create_order" />
+</LinearLayout>

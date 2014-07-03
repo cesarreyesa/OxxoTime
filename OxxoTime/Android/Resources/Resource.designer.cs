@@ -63,8 +63,20 @@ namespace OxxoTime.Android
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f060002
+			public const int logged_in_main_btn_create_order = 2131099650;
+			
 			// aapt resource value: 0x7f060000
-			public const int myButton = 2131099648;
+			public const int loggedin_main_textview_hi = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int loggedin_space = 2131099649;
+			
+			// aapt resource value: 0x7f060004
+			public const int main_button_login = 2131099652;
+			
+			// aapt resource value: 0x7f060003
+			public const int main_textview_login_result = 2131099651;
 			
 			static Id()
 			{
@@ -80,7 +92,10 @@ namespace OxxoTime.Android
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int LoggedInMain = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
 			
 			static Layout()
 			{
@@ -100,6 +115,18 @@ namespace OxxoTime.Android
 			
 			// aapt resource value: 0x7f040000
 			public const int hello = 2130968576;
+			
+			// aapt resource value: 0x7f040004
+			public const int logged_in_hi = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int logged_in_main_create_order = 2130968581;
+			
+			// aapt resource value: 0x7f040002
+			public const int login = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int not_logged_in = 2130968579;
 			
 			static String()
 			{

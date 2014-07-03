@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
-	<string name="app_name">OxxoTime.Android.Android</string>
+	<string name="app_name">OXXO Time</string>
+	<string name="login">Iniciar sesión</string>
+	<string name="not_logged_in"> Por favor inicia sesión para continuar </string>
+	<string name="logged_in_hi">Hola, {user}</string>
+	<string name="logged_in_main_create_order">Me rifo por la banda</string>
 </resources>
