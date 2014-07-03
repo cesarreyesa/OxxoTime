@@ -8,11 +8,18 @@ namespace OxxoTime
 		public static Page GetMainPage ()
 		{	
 			return new ContentPage { 
-				Content = new Label {
-					Text = "Hello, Forms !",
-					VerticalOptions = LayoutOptions.CenterAndExpand,
-					HorizontalOptions = LayoutOptions.CenterAndExpand,
-				},
+				Content = new StackLayout{
+					Children = {
+						new Label {
+							Text = "Hello, Forms !",
+							VerticalOptions = LayoutOptions.CenterAndExpand,
+							HorizontalOptions = LayoutOptions.CenterAndExpand,
+						},
+						new Button{
+
+						}
+					}
+				}
 			};
 		}
 	}
