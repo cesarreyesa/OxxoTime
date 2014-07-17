@@ -18,7 +18,7 @@ using System.Threading;
 namespace OxxoTime.Android
 {
 
-	[Activity (Label = "@string/app_name", MainLauncher = true)]
+	[Activity (Label = "@string/app_name", MainLauncher = false)]
 	public class MainActivity : Activity
 	{
 		Button btnLogin = null; 

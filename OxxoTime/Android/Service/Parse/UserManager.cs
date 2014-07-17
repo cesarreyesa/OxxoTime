@@ -3,6 +3,7 @@ using Parse;
 using System.Linq;
 using OxxoTime.Model;
 using OxxoTime.Droid;
+using System.Threading.Tasks;
 
 namespace OxxoTime.Android.Service
 {
@@ -12,13 +13,16 @@ namespace OxxoTime.Android.Service
 		{
 		}
 
-		public bool ExistUser (string email)
+		public async Task<bool> ExistUser (string email)
 		{
-			var query = ParseObject.GetQuery("User").Where (user => user.Get<string> ("email") == email);
-			var resultTask = query.FirstAsync ();
-			var result = resultTask.Result;
-			Console.WriteLine (result);
-			return result != null;
+			try{
+				var query = ParseObject.GetQuery("User").Where (user => user.Get<string> ("email") == email);
+				var result = await query.FirstAsync ();
+				Console.WriteLine (result);
+				return result != null;
+			}catch(Exception){
+				return false;
+			}
 		}
 
 		public OxxoTime.Model.User GetUser (string email)

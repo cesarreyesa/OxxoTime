@@ -22,7 +22,7 @@ namespace OxxoTime.Android
 	//	intent.PutExtra("sender", senders);
 	//	this.ApplicationContext.StartService(intent);
 	//};
-	[Activity (Label = "@string/app_name", MainLauncher = false)]
+	[Activity (Label = "@string/app_name", MainLauncher = true)]
 	public class MainActivityV2 : AndroidActivity
 	{
 		IUserManager userManager = new Service.UserManager();
@@ -40,7 +40,7 @@ namespace OxxoTime.Android
 
 			var userEmail = new AndroidServices().GetCurrentGoogleUserEmail();
 			Console.WriteLine(userEmail);
-			var exists = userManager.ExistUser(userEmail);
+			var exists = await userManager.ExistUser(userEmail);
 			if (!exists) {
 				Console.WriteLine ("el sssusuario no existe en parse");
 				Console.WriteLine ("creando cuenta");
